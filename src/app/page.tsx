@@ -4,9 +4,9 @@ import { MapPin, Clock, Phone, Mail, Star } from "lucide-react";
 
 export default function Home() {
   return (
-    <main className="fixed inset-0 z-[100] flex flex-col bg-black overflow-hidden">
+    <main className="fixed inset-0 z-[100] flex flex-col bg-black overflow-y-auto overflow-x-hidden">
       {/* Mitad Superior: Imagen a pantalla completa con degradado */}
-      <div className="relative h-[55%] md:h-[60%] w-full shrink-0">
+      <div className="relative h-[45%] md:h-[60%] w-full shrink-0">
         <Image
           src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?q=80&w=2070&auto=format&fit=crop"
           alt="Lovo Cocktails Bar"
@@ -26,16 +26,16 @@ export default function Home() {
       </div>
 
       {/* Mitad Inferior: Info y Botones Masivos */}
-      <div className="relative flex-1 bg-black flex flex-col items-center justify-center px-6 pb-12 w-full max-w-2xl mx-auto -mt-4 z-20">
+      <div className="relative flex-1 bg-black flex flex-col items-center justify-center px-4 py-6 md:pb-12 w-full max-w-2xl mx-auto z-20">
         
         {/* Título de bienvenida opcional (puedes cambiarlo) */}
-        <h2 className="text-2xl md:text-3xl font-playfair text-white mb-6 text-center italic font-light drop-shadow-md">
+        <h2 className="text-xl md:text-3xl font-playfair text-white mb-4 md:mb-6 text-center italic font-light drop-shadow-md">
           La mejor coctelería,<br />
           <span className="text-[#D3A548]">preparada en el momento</span>
         </h2>
 
         {/* Info Horario y Ubicación */}
-        <div className="w-full flex justify-between text-white/80 text-xs md:text-sm font-light mb-8 px-2">
+        <div className="w-full flex justify-between text-white/80 text-xs md:text-sm font-light mb-4 md:mb-8 px-1">
           <div className="flex flex-col items-start gap-1">
             <div className="flex items-center gap-1.5 text-[#D3A548] font-semibold mb-1">
               <Clock size={16} /> Horario
@@ -53,27 +53,27 @@ export default function Home() {
         </div>
 
         {/* Botones de Acción Estilo Píldora */}
-        <div className="w-full flex flex-col gap-4 mt-2">
-          <Link href="https://lovobar.com/reservas-lovo/" target="_blank" className="w-full flex items-center justify-center bg-[#D3A548] text-black rounded-full py-4 md:py-5 text-sm md:text-base font-bold tracking-widest uppercase hover:bg-[#b58c3a] transition-all shadow-[0_4px_20px_rgba(211,165,72,0.3)]">
+        <div className="w-full flex flex-col gap-3 md:gap-4 mt-1 md:mt-2">
+          <Link href="https://lovobar.com/reservas-lovo/" target="_blank" className="w-full flex items-center justify-center bg-[#D3A548] text-black rounded-full py-3 md:py-5 text-sm md:text-base font-bold tracking-widest uppercase hover:bg-[#b58c3a] transition-all shadow-[0_4px_20px_rgba(211,165,72,0.3)]">
             Reserva una mesa
           </Link>
-          <Link href="/carta" className="w-full flex items-center justify-center bg-transparent border border-[#D3A548] text-[#D3A548] rounded-full py-4 md:py-5 text-sm md:text-base font-bold tracking-widest uppercase hover:bg-[#D3A548]/10 transition-all">
+          <Link href="/carta" className="w-full flex items-center justify-center bg-transparent border border-[#D3A548] text-[#D3A548] rounded-full py-3 md:py-5 text-sm md:text-base font-bold tracking-widest uppercase hover:bg-[#D3A548]/10 transition-all">
             Carta
           </Link>
         </div>
 
         {/* Enlaces de Contacto y Redes */}
-        <div className="flex items-center justify-center gap-4 mt-8 flex-wrap">
-          <Link href="tel:+34910416298" className="w-12 h-12 rounded-full border border-[#D3A548]/30 flex items-center justify-center text-[#D3A548] hover:bg-[#D3A548] hover:text-black hover:scale-110 transition-all duration-300">
+        <div className="flex items-center justify-center gap-4 mt-4 md:mt-8 flex-wrap pb-4 md:pb-0">
+          <Link href="tel:+34910416298" className="w-10 h-10 md:w-12 md:h-12 rounded-full border border-[#D3A548]/30 flex items-center justify-center text-[#D3A548] hover:bg-[#D3A548] hover:text-black hover:scale-110 transition-all duration-300">
             <Phone size={22} />
           </Link>
-          <Link href="mailto:reservas@lovobar.com" className="w-12 h-12 rounded-full border border-[#D3A548]/30 flex items-center justify-center text-[#D3A548] hover:bg-[#D3A548] hover:text-black hover:scale-110 transition-all duration-300">
+          <Link href="mailto:reservas@lovobar.com" className="w-10 h-10 md:w-12 md:h-12 rounded-full border border-[#D3A548]/30 flex items-center justify-center text-[#D3A548] hover:bg-[#D3A548] hover:text-black hover:scale-110 transition-all duration-300">
             <Mail size={22} />
           </Link>
-          <Link href="https://www.tripadvisor.es/Attraction_Review-g187514-d23822109-Reviews-Lovo_Bar-Madrid.html" target="_blank" className="w-12 h-12 rounded-full border border-[#D3A548]/30 flex items-center justify-center text-[#D3A548] hover:bg-[#D3A548] hover:text-black hover:scale-110 transition-all duration-300">
+          <Link href="https://www.tripadvisor.es/Attraction_Review-g187514-d23822109-Reviews-Lovo_Bar-Madrid.html" target="_blank" className="w-10 h-10 md:w-12 md:h-12 rounded-full border border-[#D3A548]/30 flex items-center justify-center text-[#D3A548] hover:bg-[#D3A548] hover:text-black hover:scale-110 transition-all duration-300">
             <Star size={22} />
           </Link>
-          <Link href="https://www.instagram.com/lovobar" target="_blank" className="w-12 h-12 rounded-full border border-[#D3A548]/30 flex items-center justify-center text-[#D3A548] hover:bg-[#D3A548] hover:text-black hover:scale-110 transition-all duration-300">
+          <Link href="https://www.instagram.com/lovobar" target="_blank" className="w-10 h-10 md:w-12 md:h-12 rounded-full border border-[#D3A548]/30 flex items-center justify-center text-[#D3A548] hover:bg-[#D3A548] hover:text-black hover:scale-110 transition-all duration-300">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
           </Link>
         </div>
