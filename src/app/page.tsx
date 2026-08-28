@@ -73,7 +73,7 @@ export default function Home() {
           <Link href="https://www.tripadvisor.es/Attraction_Review-g187514-d23822109-Reviews-Lovo_Bar-Madrid.html" target="_blank" className="w-10 h-10 md:w-12 md:h-12 rounded-full border border-[#D3A548]/30 flex items-center justify-center text-[#D3A548] hover:bg-[#D3A548] hover:text-black hover:scale-110 transition-all duration-300">
             <Star size={22} />
           </Link>
-          <Link href="https://www.instagram.com/lovobar" target="_blank" className="w-10 h-10 md:w-12 md:h-12 rounded-full border border-[#D3A548]/30 flex items-center justify-center text-[#D3A548] hover:bg-[#D3A548] hover:text-black hover:scale-110 transition-all duration-300">
+          <Link href="https://www.instagram.com/lovobarmadrid/" target="_blank" className="w-10 h-10 md:w-12 md:h-12 rounded-full border border-[#D3A548]/30 flex items-center justify-center text-[#D3A548] hover:bg-[#D3A548] hover:text-black hover:scale-110 transition-all duration-300">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
           </Link>
         </div>
