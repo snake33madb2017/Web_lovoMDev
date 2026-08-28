@@ -8,7 +8,7 @@ export default function Home() {
       {/* Mitad Superior: Imagen a pantalla completa con degradado */}
       <div className="relative h-[45%] md:h-[60%] w-full shrink-0">
         <Image
-          src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?q=80&w=2070&auto=format&fit=crop"
+          src="/portada.jpg"
           alt="Lovo Cocktails Bar"
           fill
           className="object-cover"
