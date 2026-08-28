@@ -34,7 +34,7 @@ export default function Navbar() {
               <div key={link.name} className="relative group">
                 <Link 
                   href={link.href} 
-                  className="text-xs font-semibold tracking-[0.15em] text-white/80 hover:text-[#D4AF37] transition-colors duration-300 flex items-center gap-1"
+                  className="text-sm font-playfair font-semibold tracking-[0.15em] text-white/80 hover:text-[#D4AF37] transition-colors duration-300 flex items-center gap-1"
                 >
                   {link.name}
                   {link.hasDropdown && <ChevronDown size={14} className="text-[#D4AF37]" />}
@@ -82,14 +82,14 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="block text-sm font-semibold tracking-widest text-white/80 hover:text-[#D4AF37]"
+                className="block text-sm font-playfair font-semibold tracking-widest text-white/80 hover:text-[#D4AF37]"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.name} {link.hasDropdown && "▼"}
               </Link>
             ))}
             <div className="pt-4 border-t border-white/10 flex items-center justify-between">
-              <button className="text-white/80 hover:text-[#D4AF37] flex items-center gap-2 text-sm font-semibold tracking-widest">
+              <button className="text-white/80 hover:text-[#D4AF37] flex items-center gap-2 text-sm font-playfair font-semibold tracking-widest">
                 <Search size={16} /> BÚSQUEDA
               </button>
               <div className="flex items-center gap-2">
