@@ -17,17 +17,15 @@ export default function Home() {
         {/* Capa de degradado suave hacia negro */}
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/20"></div>
         
-        {/* Logo superior centrado */}
-        <div className="absolute top-12 left-0 right-0 flex justify-center z-10">
-          <h1 className="text-4xl md:text-6xl font-playfair text-[#D3A548] tracking-[0.2em] drop-shadow-[0_4px_12px_rgba(0,0,0,1)]">
-            LOVO
-          </h1>
-        </div>
       </div>
 
       {/* Mitad Inferior: Info y Botones Masivos */}
       <div className="relative flex-1 bg-black flex flex-col items-center justify-center px-4 py-6 md:pb-12 w-full max-w-2xl mx-auto z-20">
         
+        <h1 className="text-4xl md:text-6xl font-playfair text-[#D3A548] tracking-[0.2em] drop-shadow-md mb-2">
+          LOVO
+        </h1>
+
         {/* Título de bienvenida opcional (puedes cambiarlo) */}
         <h2 className="text-xl md:text-3xl font-playfair text-white mb-4 md:mb-6 text-center italic font-light drop-shadow-md">
           La mejor coctelería,<br />
