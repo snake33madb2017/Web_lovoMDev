@@ -11,7 +11,7 @@ export default function Home() {
           src="/portada.jpg"
           alt="Lovo Cocktails Bar"
           fill
-          className="object-cover"
+          className="object-contain"
           priority
         />
         {/* Capa de degradado suave hacia negro */}
@@ -76,6 +76,10 @@ export default function Home() {
           </Link>
         </div>
 
+        {/* Developer Footer */}
+        <div className="text-[10px] text-white/40 mt-auto pt-2 pb-1 text-center font-light tracking-wide w-full">
+          Desarrollado por @MDev - Marco Daza 2026
+        </div>
       </div>
     </main>
   );
