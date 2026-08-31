@@ -5,7 +5,7 @@ import FeedbackWidget from "@/components/FeedbackWidget";
 
 export default function Home() {
   return (
-    <main className="fixed inset-0 h-[100dvh] z-[100] flex flex-col bg-black overflow-hidden">
+    <main className="fixed inset-0 h-[100dvh] z-[100] flex flex-col bg-black overflow-x-hidden overflow-y-auto">
       {/* Mitad Superior: Imagen a pantalla completa con degradado */}
       <div className="relative h-[40%] md:h-[55%] w-full shrink-0">
         <Image
