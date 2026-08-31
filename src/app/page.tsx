@@ -82,9 +82,10 @@ export default function Home() {
           <div className="text-[10px] text-white/40 text-center font-light tracking-wide w-full">
             Desarrollado por @MDev - Marco Daza 2026
           </div>
+          
+          <FeedbackWidget />
         </div>
       </div>
-      <FeedbackWidget />
     </main>
   );
 }
