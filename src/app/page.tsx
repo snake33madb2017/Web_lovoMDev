@@ -53,7 +53,7 @@ export default function Home() {
         </div>
 
         {/* Botones de Acción Estilo Píldora */}
-        <div className="w-full flex flex-col gap-2 md:gap-4">
+        <div className="w-full flex flex-col gap-3 md:gap-4 my-6 md:my-8">
           <Link href="https://lovobar.com/reservas-lovo/" target="_blank" className="w-full flex items-center justify-center bg-[#D3A548] text-black rounded-full py-2.5 md:py-5 text-sm md:text-base font-bold tracking-widest uppercase hover:bg-[#b58c3a] transition-all shadow-[0_4px_20px_rgba(211,165,72,0.3)]">
             Reserva una mesa
           </Link>
