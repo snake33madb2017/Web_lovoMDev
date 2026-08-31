@@ -19,9 +19,28 @@ export default function FeedbackWidget() {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Aquí se enviaría el feedback al backend/buzón interno
+    
+    try {
+      // Usamos formsubmit.co para enviar el correo sin necesidad de backend
+      await fetch("https://formsubmit.co/ajax/snake33madb@gmail.com", {
+        method: "POST",
+        headers: { 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+            Estrellas: rating,
+            Comentario: feedbackText,
+            _subject: `Nuevo feedback de ${rating} estrellas en Lovo Bar`,
+            _template: "box"
+        })
+      });
+    } catch (error) {
+      console.error("Error enviando feedback:", error);
+    }
+
     setSubmitted(true);
     setTimeout(() => {
       setIsOpen(false);
