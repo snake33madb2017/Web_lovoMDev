@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { MapPin, Clock, Phone, Mail, Star } from "lucide-react";
+import FeedbackWidget from "@/components/FeedbackWidget";
 
 export default function Home() {
   return (
@@ -83,6 +84,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <FeedbackWidget />
     </main>
   );
 }
