@@ -12,8 +12,8 @@ const menuData = [
     category: "Vinos Blancos",
     description: "Nuestra selección de vinos blancos",
     items: [
-      { name: "José Pariente", price: "24€", origin: "Rueda", flavor: "VERDEJO", ingredients: "Fresco, afrutado y con un toque floral.", image: "https://images.unsplash.com/photo-1585553616435-2dc0a54e271d?q=80&w=800&auto=format&fit=crop" },
-      { name: "Terras Gauda", price: "28€", origin: "Rías Baixas", flavor: "ALBARIÑO", ingredients: "Complejo, con notas de manzana y melocotón.", image: placeholderImage },
+      { name: "José Pariente", price: "24€", origin: "Rueda", flavor: "VERDEJO", ingredients: "Fresco, afrutado y con un toque floral.", image: "/vinos/jose_pariente_1788633088180.jpg" },
+      { name: "Terras Gauda", price: "28€", origin: "Rías Baixas", flavor: "ALBARIÑO", ingredients: "Complejo, con notas de manzana y melocotón.", image: "/vinos/terras_gauda_1788633099147.jpg" },
     ]
   },
   {
@@ -21,8 +21,8 @@ const menuData = [
     category: "Vinos Tintos",
     description: "Nuestra selección de vinos tintos",
     items: [
-      { name: "Pago de Carraovejas", price: "45€", origin: "Ribera del Duero", flavor: "TEMPRANILLO", ingredients: "Estructurado, notas de fruta madura y roble.", image: "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?q=80&w=800&auto=format&fit=crop" },
-      { name: "Marqués de Murrieta", price: "35€", origin: "Rioja", flavor: "TEMPRANILLO / GARNACHA", ingredients: "Clásico, equilibrado con aromas especiados.", image: placeholderImage },
+      { name: "Pago de Carraovejas", price: "45€", origin: "Ribera del Duero", flavor: "TEMPRANILLO", ingredients: "Estructurado, notas de fruta madura y roble.", image: "/vinos/pago_carraovejas_1788633111682.jpg" },
+      { name: "Marqués de Murrieta", price: "35€", origin: "Rioja", flavor: "TEMPRANILLO / GARNACHA", ingredients: "Clásico, equilibrado con aromas especiados.", image: "/vinos/marques_murrieta_1788633121904.jpg" },
     ]
   },
   {
@@ -30,9 +30,9 @@ const menuData = [
     category: "Champagne",
     description: "La magia de las burbujas",
     items: [
-      { name: "Moët & Chandon Brut Imperial", price: "85€", origin: "Champagne, Francia", flavor: "BRUT", ingredients: "Vibrante, manzana verde y notas cítricas.", image: placeholderImage },
-      { name: "Veuve Clicquot Yellow Label", price: "95€", origin: "Champagne, Francia", flavor: "BRUT", ingredients: "Potente y complejo, con notas de vainilla.", image: placeholderImage },
-      { name: "Dom Pérignon Vintage", price: "295€", origin: "Champagne, Francia", flavor: "BRUT VINTAGE", ingredients: "Excepcional, notas florales y tostadas.", image: placeholderImage },
+      { name: "Moët & Chandon Brut Imperial", price: "85€", origin: "Champagne, Francia", flavor: "BRUT", ingredients: "Vibrante, manzana verde y notas cítricas.", image: "/vinos/moet_chandon_1788633132026.jpg" },
+      { name: "Veuve Clicquot Yellow Label", price: "95€", origin: "Champagne, Francia", flavor: "BRUT", ingredients: "Potente y complejo, con notas de vainilla.", image: "/vinos/veuve_clicquot_1788633143150.jpg" },
+      { name: "Dom Pérignon Vintage", price: "295€", origin: "Champagne, Francia", flavor: "BRUT VINTAGE", ingredients: "Excepcional, notas florales y tostadas.", image: "/vinos/dom_perignon_1788633154295.jpg" },
       { 
         name: "Perrier-Jouët Belle Epoque Rosé", 
         price: "800€", 
