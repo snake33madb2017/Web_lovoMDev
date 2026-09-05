@@ -30,9 +30,9 @@ const menuData = [
     category: "Champagne",
     description: "La magia de las burbujas",
     items: [
-      { name: "Moët & Chandon Brut Imperial", price: "85€", origin: "Champagne, Francia", flavor: "BRUT", ingredients: "Vibrante, manzana verde y notas cítricas.", image: "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?q=80&w=800&auto=format&fit=crop" },
+      { name: "Moët & Chandon Brut Imperial", price: "85€", origin: "Champagne, Francia", flavor: "BRUT", ingredients: "Vibrante, manzana verde y notas cítricas.", image: placeholderImage },
       { name: "Veuve Clicquot Yellow Label", price: "95€", origin: "Champagne, Francia", flavor: "BRUT", ingredients: "Potente y complejo, con notas de vainilla.", image: placeholderImage },
-      { name: "Dom Pérignon Vintage", price: "295€", origin: "Champagne, Francia", flavor: "BRUT VINTAGE", ingredients: "Excepcional, notas florales y tostadas.", image: "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?q=80&w=800&auto=format&fit=crop" },
+      { name: "Dom Pérignon Vintage", price: "295€", origin: "Champagne, Francia", flavor: "BRUT VINTAGE", ingredients: "Excepcional, notas florales y tostadas.", image: placeholderImage },
       { 
         name: "Perrier-Jouët Belle Epoque Rosé", 
         price: "800€", 
