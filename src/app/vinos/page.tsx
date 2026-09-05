@@ -39,14 +39,15 @@ const menuData = [
         origin: "Epernay, France", 
         flavor: "CHAMPAGNE BRUT", 
         ingredients: "Since 1811, the House of Perrier-Jouët has been elegantly nurturing its expertise by combining the exceptional quality of its vineyards with the subtle art of blending.", 
-        image: "/Champagne/4 (1).jpg" 
+        image: "/Champagne/4 (1).jpg",
+        gallery: ["/Champagne/4 (1).jpg", "/Champagne/4 (2).jpg", "/Champagne/4 (3).jpg", "/Champagne/4 (4).jpg", "/Champagne/4 (5).jpg"]
       },
     ]
   }
 ];
 
 export default function VinosPage() {
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [selectedGallery, setSelectedGallery] = useState<{ images: string[], index: number } | null>(null);
 
   return (
     <div className="min-h-screen text-white/90 pt-32 pb-40 relative">
@@ -81,7 +82,7 @@ export default function VinosPage() {
                     {/* Bottle Image */}
                     <div 
                       className="relative w-full md:w-48 h-64 md:h-auto cursor-pointer overflow-hidden group shrink-0 min-h-[200px]"
-                      onClick={() => setSelectedImage(item.image)}
+                      onClick={() => setSelectedGallery({ images: item.gallery || [item.image], index: 0 })}
                     >
                       <Image 
                         src={item.image} 
@@ -139,25 +140,55 @@ export default function VinosPage() {
       </div>
 
       {/* Fullscreen Image Modal */}
-      {selectedImage && (
+      {selectedGallery && (
         <div 
           className="fixed inset-0 z-[100] bg-black/95 backdrop-blur-md flex items-center justify-center p-4 transition-all"
-          onClick={() => setSelectedImage(null)}
+          onClick={() => setSelectedGallery(null)}
         >
           <button 
             className="absolute top-4 right-4 md:top-8 md:right-8 z-[110] text-[#D3A548] text-[80px] leading-none hover:scale-110 transition-transform cursor-pointer drop-shadow-[0_0_15px_rgba(0,0,0,1)] font-light"
-            onClick={(e) => { e.stopPropagation(); setSelectedImage(null); }}
+            onClick={(e) => { e.stopPropagation(); setSelectedGallery(null); }}
           >
             &times;
           </button>
+
+          {selectedGallery.images.length > 1 && (
+            <>
+              <button 
+                className="absolute left-2 md:left-8 top-1/2 -translate-y-1/2 z-[110] text-[#D3A548] text-4xl md:text-5xl hover:scale-110 transition-transform p-4 drop-shadow-[0_0_10px_rgba(0,0,0,0.8)]"
+                onClick={(e) => { 
+                  e.stopPropagation(); 
+                  setSelectedGallery(prev => prev ? { ...prev, index: (prev.index - 1 + prev.images.length) % prev.images.length } : null);
+                }}
+              >
+                &#10094;
+              </button>
+              <button 
+                className="absolute right-2 md:right-8 top-1/2 -translate-y-1/2 z-[110] text-[#D3A548] text-4xl md:text-5xl hover:scale-110 transition-transform p-4 drop-shadow-[0_0_10px_rgba(0,0,0,0.8)]"
+                onClick={(e) => { 
+                  e.stopPropagation(); 
+                  setSelectedGallery(prev => prev ? { ...prev, index: (prev.index + 1) % prev.images.length } : null);
+                }}
+              >
+                &#10095;
+              </button>
+            </>
+          )}
           
           <div className="relative w-full max-w-3xl aspect-[3/4] md:aspect-square drop-shadow-[0_0_20px_rgba(255,255,255,0.1)]" onClick={(e) => e.stopPropagation()}>
              <Image 
-                src={selectedImage} 
+                src={selectedGallery.images[selectedGallery.index]} 
                 alt="Ampliado" 
                 fill 
                 className="object-contain"
              />
+             {selectedGallery.images.length > 1 && (
+               <div className="absolute -bottom-8 left-0 w-full flex justify-center gap-2">
+                 {selectedGallery.images.map((_, idx) => (
+                   <div key={idx} className={`w-2 h-2 rounded-full transition-colors ${idx === selectedGallery.index ? 'bg-[#D3A548]' : 'bg-white/30'}`} />
+                 ))}
+               </div>
+             )}
           </div>
         </div>
       )}
