@@ -10,7 +10,7 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "RESERVAR", href: "#" },
-    { name: "CARTA", href: "/carta", hasDropdown: false },
+    { name: "CARTA", href: "/carta", hasDropdown: true },
     { name: "EVENTOS", href: "#" },
     { name: "NUESTRA TRIBU", href: "#" },
     { name: "BLOG", href: "#" },
@@ -41,9 +41,9 @@ export default function Navbar() {
                 </Link>
                 {/* Simple Dropdown placeholder for 'CARTA' */}
                 {link.hasDropdown && (
-                  <div className="absolute left-0 mt-2 w-40 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 bg-black border border-[#D4AF37]/30 py-2">
-                    <Link href="#" className="block px-4 py-2 text-xs text-white/80 hover:text-[#D4AF37] hover:bg-white/5">Cocteles</Link>
-                    <Link href="#" className="block px-4 py-2 text-xs text-white/80 hover:text-[#D4AF37] hover:bg-white/5">Comida</Link>
+                  <div className="absolute left-0 mt-2 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 bg-black border border-[#D4AF37]/30 py-2">
+                    <Link href="/carta" className="block px-4 py-2 text-xs text-white/80 hover:text-[#D4AF37] hover:bg-white/5">Cócteles</Link>
+                    <Link href="/vinos" className="block px-4 py-2 text-xs text-white/80 hover:text-[#D4AF37] hover:bg-white/5">Vinos y Champagne</Link>
                   </div>
                 )}
               </div>
@@ -79,14 +79,21 @@ export default function Navbar() {
         <div className="md:hidden bg-black/95 border-b border-white/10">
           <div className="px-4 pt-2 pb-6 space-y-4">
             {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                className="block text-sm font-playfair font-semibold tracking-widest text-white/80 hover:text-[#D4AF37]"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {link.name} {link.hasDropdown && "▼"}
-              </Link>
+              <div key={link.name}>
+                <Link
+                  href={link.href}
+                  className="block text-sm font-playfair font-semibold tracking-widest text-white/80 hover:text-[#D4AF37]"
+                  onClick={() => !link.hasDropdown && setIsMobileMenuOpen(false)}
+                >
+                  {link.name} {link.hasDropdown && "▼"}
+                </Link>
+                {link.hasDropdown && (
+                  <div className="pl-4 mt-2 mb-4 space-y-3 border-l border-white/10">
+                    <Link href="/carta" className="block text-xs text-white/60 hover:text-[#D4AF37]" onClick={() => setIsMobileMenuOpen(false)}>Cócteles</Link>
+                    <Link href="/vinos" className="block text-xs text-white/60 hover:text-[#D4AF37]" onClick={() => setIsMobileMenuOpen(false)}>Vinos y Champagne</Link>
+                  </div>
+                )}
+              </div>
             ))}
             <div className="pt-4 border-t border-white/10 flex items-center justify-between">
               <button className="text-white/80 hover:text-[#D4AF37] flex items-center gap-2 text-sm font-playfair font-semibold tracking-widest">
