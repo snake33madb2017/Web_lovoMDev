@@ -14,10 +14,10 @@ const menuData = [
     category: "Las Tribus",
     description: "Nuestra carta inspirada en las Tribus – Utopía Cultural",
     items: [
-      { name: "Bubi", price: "12€", origin: "Isla de Bioko, Costa Oeste de África Central", flavor: "DULCE / REFRESCANTE", ingredients: "Ron Arehucas | Contrití | Platano | Cacao | King Sawa | Ginger Beer", image: "https://images.unsplash.com/photo-1536935338788-846bb9981813?q=80&w=800&auto=format&fit=crop" },
-      { name: "Manabi", price: "13€", origin: "Selvas tropicales de América central", flavor: "AFRUTADO / PICANTE", ingredients: "Ron Bumbu | Piña Centrifugada | Tomate de Árbol | Cacahuete | Coco | Espuma Picante", image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=800&auto=format&fit=crop" },
-      { name: "Inuit", price: "13€", origin: "Ártico norteamericano y Groenlandia", flavor: "CITRICO", ingredients: "Martin Miller's Gin | Licor Salmón & Eneldo | King Sawa | Ruibarbo Bitter", image: placeholderImage },
-      { name: "Maori", price: "13€", origin: "Islas del Pacífico Sur", flavor: "CITRICO / REFRESCANTE", ingredients: "Roku Gin | Matcha | Licor Kaffir | Hojas Verdes | Lima | Soda Higuera", image: "https://images.unsplash.com/photo-1536935338788-846bb9981813?q=80&w=800&auto=format&fit=crop" },
+      { name: "Bubi", price: "12€", origin: "Isla de Bioko, Costa Oeste de África Central", flavor: "DULCE / REFRESCANTE", ingredients: "Ron Arehucas | Contrití | Platano | Cacao | King Sawa | Ginger Beer", image: "/cocteles/lovo_bubi.webp" },
+      { name: "Manabi", price: "13€", origin: "Selvas tropicales de América central", flavor: "AFRUTADO / PICANTE", ingredients: "Ron Bumbu | Piña Centrifugada | Tomate de Árbol | Cacahuete | Coco | Espuma Picante", image: "/cocteles/lovo_manabi.webp" },
+      { name: "Inuit", price: "13€", origin: "Ártico norteamericano y Groenlandia", flavor: "CITRICO", ingredients: "Martin Miller's Gin | Licor Salmón & Eneldo | King Sawa | Ruibarbo Bitter", image: "/cocteles/lovo_inuit.webp" },
+      { name: "Maori", price: "13€", origin: "Islas del Pacífico Sur", flavor: "CITRICO / REFRESCANTE", ingredients: "Roku Gin | Matcha | Licor Kaffir | Hojas Verdes | Lima | Soda Higuera", image: "/cocteles/Cocktail_Maori.webp" },
     ]
   },
   {
@@ -25,10 +25,10 @@ const menuData = [
     category: "Animal Tótem",
     description: "Energías protectoras y espíritus guía representados en cada trago",
     items: [
-      { name: "NGI", price: "13€", origin: "Oeste de África - Energía de paz y autocontrol", flavor: "TOSTADO / COMPLEJO", ingredients: "Brandy Fundador 12 | Cacao | Guinness | King Sawa | Espuma De Banana Ácida", image: placeholderImage },
-      { name: "Boazu", price: "12€", origin: "Norte de Europa - Poder personal", flavor: "DULCE / VINICO", ingredients: "Ron Abuelo | Pinot Charentes Fino | Bitter De Nuez | Cordial De Fresas", image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=800&auto=format&fit=crop" },
-      { name: "Tl'iish", price: "13€", origin: "Tótem de transmutación e inmortalidad", flavor: "DULCE / ESPECIADO", ingredients: "Ron Sta.Teresa 1796 | Nuez Moscada King Sawa | Peras Al Horno", image: placeholderImage },
-      { name: "Shunme", price: "14€", origin: "Libertad y clarividencia", flavor: "HERBAL / AHUMADO / REFRESCANTE", ingredients: "Laphroaig Whiskey | Lovo Herbal Liquor | Hierba Luisa | King Sawa | Humo | Soda Higuera", image: "https://images.unsplash.com/photo-1536935338788-846bb9981813?q=80&w=800&auto=format&fit=crop" },
+      { name: "NGI", price: "13€", origin: "Oeste de África - Energía de paz y autocontrol", flavor: "TOSTADO / COMPLEJO", ingredients: "Brandy Fundador 12 | Cacao | Guinness | King Sawa | Espuma De Banana Ácida", image: "/cocteles/lovo_ngi.webp" },
+      { name: "Boazu", price: "12€", origin: "Norte de Europa - Poder personal", flavor: "DULCE / VINICO", ingredients: "Ron Abuelo | Pinot Charentes Fino | Bitter De Nuez | Cordial De Fresas", image: "/cocteles/lovo_boazu.webp" },
+      { name: "Tl'iish", price: "13€", origin: "Tótem de transmutación e inmortalidad", flavor: "DULCE / ESPECIADO", ingredients: "Ron Sta.Teresa 1796 | Nuez Moscada King Sawa | Peras Al Horno", image: "/cocteles/lovo_tliish.webp" },
+      { name: "Shunme", price: "14€", origin: "Libertad y clarividencia", flavor: "HERBAL / AHUMADO / REFRESCANTE", ingredients: "Laphroaig Whiskey | Lovo Herbal Liquor | Hierba Luisa | King Sawa | Humo | Soda Higuera", image: "/cocteles/Cocktail_Shunme.webp" },
     ]
   },
   {
@@ -37,7 +37,7 @@ const menuData = [
     description: "Creaciones en honor a las coctelerías amigas alrededor del mundo",
     items: [
       { name: "Sencha By Handshake", price: "14€", origin: "Handshake, México", flavor: "REFRESCANTE / ASTRINGENTE", ingredients: "Maestro Dobel Tequila | Sake Cordial Te Verde Hojicha | Yuzu", image: placeholderImage },
-      { name: "Tomato & Strawberry", price: "13€", origin: "Svanen, Oslo", flavor: "CITRICO / LIGERO HUMAMI", ingredients: "Ginebra Tanqueray | Fresas | Amontillado Martini Bitter | Tomate | Lima", image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=800&auto=format&fit=crop" },
+      { name: "Tomato & Strawberry", price: "13€", origin: "Svanen, Oslo", flavor: "CITRICO / LIGERO HUMAMI", ingredients: "Ginebra Tanqueray | Fresas | Amontillado Martini Bitter | Tomate | Lima", image: "/cocteles/Cocktail_TomatoStrawberry-scaled.webp" },
       { name: "EO-Manhattan", price: "15€", origin: "Employees Only, New York City", flavor: "FUERTE", ingredients: "Mitchers Rye | Cocchi Rosso | Grand Marnier Angostura | Twist De Limón", image: placeholderImage },
     ]
   },
@@ -46,9 +46,9 @@ const menuData = [
     category: "Lovo Lovers",
     description: "Nuestros clásicos y creaciones inspiradas en la vida de Josephine",
     items: [
-      { name: "Jupe Banane", price: "12€", origin: "Icónico y dulce, como la Baker", flavor: "DULCE", ingredients: "Vodka Grey Goose | Yogur | Fresa & frambuesa | Plátano maduro | Limón", image: "https://images.unsplash.com/photo-1536935338788-846bb9981813?q=80&w=800&auto=format&fit=crop" },
+      { name: "Jupe Banane", price: "12€", origin: "Icónico y dulce, como la Baker", flavor: "DULCE", ingredients: "Vodka Grey Goose | Yogur | Fresa & frambuesa | Plátano maduro | Limón", image: "/cocteles/lovo-bar-madrid-50-best-bars-jupe-banane-1.webp" },
       { name: "Devil", price: "13€", origin: "Un apodo amargo que esconde dulzura", flavor: "AMARGO", ingredients: "Whisky Hibiki Harmony | Disaronno Originale | Campari | Algarroba | Cinzano | Ruibarbo", image: placeholderImage },
-      { name: "Jazz Cleopatra", price: "13€", origin: "La era del jazz y la Baker su reina", flavor: "AFRUTADO / AHUMADO / COMPLEJO", ingredients: "Mezcal 400 Conejos | Coco | Piña | Guayaba | Citric soul | Chipotle", image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=800&auto=format&fit=crop" },
+      { name: "Jazz Cleopatra", price: "13€", origin: "La era del jazz y la Baker su reina", flavor: "AFRUTADO / AHUMADO / COMPLEJO", ingredients: "Mezcal 400 Conejos | Coco | Piña | Guayaba | Citric soul | Chipotle", image: placeholderImage },
     ]
   }
 ];
