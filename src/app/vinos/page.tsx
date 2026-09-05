@@ -35,7 +35,7 @@ const menuData = [
       { name: "Dom Pérignon Vintage", price: "295€", origin: "Champagne, Francia", flavor: "BRUT VINTAGE", ingredients: "Excepcional, notas florales y tostadas.", image: "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?q=80&w=800&auto=format&fit=crop" },
       { 
         name: "Perrier-Jouët Belle Epoque Rosé", 
-        price: "1,5L", 
+        price: "800€", 
         origin: "Epernay, France", 
         flavor: "CHAMPAGNE BRUT", 
         ingredients: "Since 1811, the House of Perrier-Jouët has been elegantly nurturing its expertise by combining the exceptional quality of its vineyards with the subtle art of blending.", 
